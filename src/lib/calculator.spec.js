@@ -21,4 +21,9 @@ it('should throw an error if what is provided to the method cannot be summed', (
         sum({})
     }).toThrowError();
 
+    expect(() => {
+        sum()
+    }).toThrowError();
+
+
 });
