@@ -12,4 +12,13 @@ it('should throw an error if what is provided to the method cannot be summed', (
     expect(() => {
         sum('', '2')
     }).toThrowError();
+
+    expect(() => {
+        sum([2, 2])
+    }).toThrowError();
+
+    expect(() => {
+        sum({})
+    }).toThrowError();
+
 });
