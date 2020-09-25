@@ -46,7 +46,7 @@ describe('Query string to object', () => {
   it('should convert a query string of a single key-value pair to object', () => {
     const qs = 'name=Silvio';
     expect(parse(qs)).toEqual({
-       name: 'Silvio',
+      name: 'Silvio',
     });
   });
   it('should convert a query string to an object taking care of comma separated values', () => {
