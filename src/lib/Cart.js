@@ -30,6 +30,7 @@ export default class Cart {
      
       if (item.condition && item.condition.percentage && item.quantity > item.condition.minimum ) {
         discount = amount.percentage(item.condition.percentage); 
+        console.log(discount);
       }
 
       return acc.add(amount).subtract(discount);
